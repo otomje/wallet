@@ -1,0 +1,70 @@
+:root {
+    --none: transparent;
+    --max-radius: 9999px;
+    --border-radius: 20px;
+    --button-border-radius: 15px;
+    --scrollbar-track: var(--none);
+    --scrollbar-thumb: #969696;
+
+    --white: #ffffff;
+    --light-grey: #c4c4c4;
+    --purple: #bfaff2;
+    --light-yellow: #fbe4ab;
+    --yellow: #ffdf90;
+    --red: #ff6250;
+    --blue: #3366ff;
+    --light-green: #d9efeb;
+    --green: #009379;
+    --dark-gray: #333333;
+    --primary-gray: #2b2b2b;
+}
+
+* {
+    scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./fonts/Poppins-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./fonts/Poppins-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./fonts/Poppins-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('./fonts/Lato-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@keyframes fade-in {
+    to {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translate(0);
+    }
+}
+
+@keyframes scrolled {
+    to {
+        opacity: 1;
+    }
+}
