@@ -347,23 +347,22 @@ button:focus-visible {
 }
 
 .footer__body {
-    row-gap: 60px;
+    gap: 60px 40px;
     padding-block: 45px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .footer__menu {
     height: 100%;
     gap: 20px 40px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.footer__menu,
 .footer__menu-item {
     display: flex;
-}
-
-.footer__menu-item {
     align-items: center;
 }
 
