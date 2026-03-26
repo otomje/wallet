@@ -23,6 +23,19 @@
     scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    white-space: nowrap !important;
+    clip-path: inset(100%) !important;
+    clip: rect(0 0 0 0) !important;
+    overflow: hidden !important;
+}
+
 @font-face {
     font-family: 'Poppins';
     src: url('./fonts/Poppins-Regular.woff2') format('woff2');
@@ -63,8 +76,8 @@
     }
 }
 
-@keyframes scrolled {
+/* @keyframes scrolled {
     to {
         opacity: 1;
     }
-}
+} */
