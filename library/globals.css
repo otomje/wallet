@@ -72,7 +72,6 @@
     to {
         opacity: 1;
         pointer-events: auto;
-        transform: translate(0);
     }
 }
 

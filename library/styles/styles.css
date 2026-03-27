@@ -113,10 +113,7 @@ button:focus-visible {
 
 .banner {
     opacity: 0;
-    z-index: 10;
-    position: relative;
     pointer-events: none;
-    transform: translateY(-15px);
     animation: fade-in 1.5s linear forwards;
 }
 
@@ -127,8 +124,7 @@ button:focus-visible {
 .contacts {
     opacity: 0;
     pointer-events: none;
-    transform: translateY(-15px);
-    animation: fade-in 1.5s linear .5s forwards;
+    animation: fade-in 1.5s linear 1s forwards;
 }
 
 .banner__container {
@@ -340,6 +336,7 @@ button:focus-visible {
 
 .contacts__image {
     height: auto;
+    border-radius: var(--border-radius);
 }
 
 .footer__container {
