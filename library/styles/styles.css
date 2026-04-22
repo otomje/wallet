@@ -83,11 +83,6 @@ button:focus-visible {
     background-color: var(--none);
 }
 
-.button--transparent:hover,
-.button--transparent:active {
-    color: var(--light-grey);
-}
-
 .button--transparent {
     height: auto;
     border-radius: 0;
@@ -96,13 +91,18 @@ button:focus-visible {
     transition: color .12s linear;
 }
 
-.button--log-in {
+.button--transparent:hover,
+.button--transparent:active {
+    color: var(--light-grey);
+}
+
+.button-log-in {
     padding-inline: 60px;
     background-color: var(--purple);
 }
 
-.button--log-in.button--fill:hover,
-.button--log-in.button--fill:active {
+.button-log-in.button--fill:hover,
+.button-log-in.button--fill:active {
     color: var(--purple);
     outline-color: var(--purple);
 }
@@ -111,12 +111,7 @@ button:focus-visible {
     max-width: calc(1280px - 100px * 2 + 20px * 2);
 }
 
-.banner {
-    opacity: 0;
-    pointer-events: none;
-    animation: fade-in 1.5s linear forwards;
-}
-
+.banner,
 .partners,
 .preview,
 .conditions,
@@ -125,6 +120,10 @@ button:focus-visible {
     opacity: 0;
     pointer-events: none;
     animation: fade-in 1.5s linear 1s forwards;
+}
+
+.banner {
+    animation: fade-in 1.5s linear forwards;
 }
 
 .banner__container {
@@ -166,13 +165,13 @@ button:focus-visible {
     color: var(--white);
 }
 
-.button--get-started {
+.button-get-started {
     padding-inline: 38px;
     background-color: var(--yellow);
 }
 
-.button--get-started.button--fill:hover,
-.button--get-started.button--fill:active {
+.button-get-started.button--fill:hover,
+.button-get-started.button--fill:active {
     color: var(--yellow);
     outline-color: var(--yellow);
 }
@@ -351,7 +350,7 @@ button:focus-visible {
     justify-content: space-between;
 }
 
-.footer__menu {
+.footer__menu-list {
     height: 100%;
     gap: 20px 40px;
     display: flex;
